@@ -68,7 +68,8 @@ public class ContactUsPage {
 	}
 	
 	public boolean getFormErrorMessage(){
-		if(formErrorMessage.getText() == "Please make corrections below and try again."){
+		System.out.println(formErrorMessage.getText());
+		if("Please make corrections below and try again.".equals(formErrorMessage.getText())){
 			return true;
 		}
 		return false;
