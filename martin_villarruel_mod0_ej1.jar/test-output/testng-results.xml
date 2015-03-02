@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16105" started-at="2015-02-27T20:30:25Z" finished-at="2015-02-27T20:30:41Z">
+  <suite name="Default suite" duration-ms="18916" started-at="2015-03-02T13:06:05Z" finished-at="2015-03-02T13:06:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16105" started-at="2015-02-27T20:30:25Z" finished-at="2015-02-27T20:30:41Z">
+    <test name="Default test" duration-ms="18916" started-at="2015-03-02T13:06:05Z" finished-at="2015-03-02T13:06:23Z">
       <class name="martin_villarruel_automation_pages_tests.Tests">
-        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_automation_pages_tests.Tests@e7a94c]" name="before" is-config="true" duration-ms="4330" started-at="2015-02-27T17:30:25Z" finished-at="2015-02-27T17:30:29Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_automation_pages_tests.Tests@11bee48]" name="before" is-config="true" duration-ms="4077" started-at="2015-03-02T10:06:05Z" finished-at="2015-03-02T10:06:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="contactUsFormIncomplete()[pri:0, instance:martin_villarruel_automation_pages_tests.Tests@e7a94c]" name="contactUsFormIncomplete" duration-ms="10730" started-at="2015-02-27T17:30:29Z" finished-at="2015-02-27T17:30:40Z">
+        <test-method status="PASS" signature="howManyCalendarPostByDate()[pri:0, instance:martin_villarruel_automation_pages_tests.Tests@11bee48]" name="howManyCalendarPostByDate" duration-ms="7209" started-at="2015-03-02T10:06:09Z" finished-at="2015-03-02T10:06:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- contactUsFormIncomplete -->
-        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_automation_pages_tests.Tests@e7a94c]" name="after" is-config="true" duration-ms="1032" started-at="2015-02-27T17:30:40Z" finished-at="2015-02-27T17:30:41Z">
+        </test-method> <!-- howManyCalendarPostByDate -->
+        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_automation_pages_tests.Tests@11bee48]" name="after" is-config="true" duration-ms="1032" started-at="2015-03-02T10:06:16Z" finished-at="2015-03-02T10:06:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_automation_pages_tests.Tests@11bee48]" name="before" is-config="true" duration-ms="3923" started-at="2015-03-02T10:06:17Z" finished-at="2015-03-02T10:06:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="validatePageTittle()[pri:0, instance:martin_villarruel_automation_pages_tests.Tests@11bee48]" name="validatePageTittle" duration-ms="1634" started-at="2015-03-02T10:06:21Z" finished-at="2015-03-02T10:06:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePageTittle -->
+        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_automation_pages_tests.Tests@11bee48]" name="after" is-config="true" duration-ms="1020" started-at="2015-03-02T10:06:22Z" finished-at="2015-03-02T10:06:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->

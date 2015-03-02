@@ -17,7 +17,13 @@ public class HomePage {
 	
 	@FindBy(id="content")
 	private WebElement homePagePostsContent;
-
+	
+	@FindBy(id="prev")
+	private WebElement previousCalendarBtn;
+	
+	@FindBy(id="wp-calendar")
+	private WebElement calendarWrapper;
+	
 	public void goToPage(WebDriver driver){
 		driver.get("http://10.28.148.127/wordpress/");
 	}
@@ -34,5 +40,13 @@ public class HomePage {
 	public String getDateFromPost(){
 		String date = homePagePostsContent.findElement(By.tagName("time")).getText();
 		return date;
+	}
+	
+	public void goToPreviusPost(){
+		previousCalendarBtn.click();
+	}
+	
+	public void goToCalendarPost(WebElement post){
+		post.click();		
 	}
 }

@@ -2,6 +2,8 @@ package martin_villarruel_automation_pages_tests;
 
 import java.util.concurrent.TimeUnit;
 
+import martin_villarruel_automation_pages.CalendarDayPage;
+import martin_villarruel_automation_pages.CalendarPreviusPage;
 import martin_villarruel_automation_pages.ContactUsPage;
 import martin_villarruel_automation_pages.HomePage;
 import martin_villarruel_automation_pages.PostPage;
@@ -94,8 +96,14 @@ public class Tests {
 		
 	}
 	
-//	@Test()
-//	public void howManyCalendarPostByDate(){
-//		
-//	}
+	@Test()
+	public void howManyCalendarPostByDate(){
+		HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+		homePage.goToPage(driver);
+		homePage.goToPreviusPost();
+		CalendarPreviusPage calendarPrev = PageFactory.initElements(driver, CalendarPreviusPage.class);
+		calendarPrev.findCalendarPosts();
+		CalendarDayPage calendarDay = PageFactory.initElements(driver, CalendarDayPage.class);
+		calendarDay.getArticlesList();
+	}
 }
