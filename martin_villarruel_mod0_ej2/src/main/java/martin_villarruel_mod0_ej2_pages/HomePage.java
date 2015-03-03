@@ -5,36 +5,72 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePage {
-	
-	@FindBy(id="headerStandard")
+
+	@FindBy(id = "headerStandard")
 	private WebElement pageHeader;
-	
-	@FindBy(xpath="//li[@class='welcomeText']")
+
+	@FindBy(xpath = "//li[@class='welcomeText']")
 	private WebElement welcomeText;
-	
+
 	@FindBy(xpath = "//a[contains(@href, 'https://www.cheaptickets.com/account/login?destinationUrl=%2F')]")
 	private WebElement loginLink;
-	
-	@FindBy(xpath="//a[contains(@href, '/account/logout')]")
+
+	@FindBy(xpath = "//a[contains(@href, '/account/logout')]")
 	private WebElement logoutLink;
 
-	public void goToPage(WebDriver driver){
+	@FindBy(xpath = "//input[@id='search.type.air']")
+	private WebElement flyRadioBtn;
+
+	@FindBy(xpath = "//input[@name='ar.rt.leaveSlice.orig.key']")
+	private WebElement originFlyText;
+
+	@FindBy(xpath = "//input[@name='ar.rt.leaveSlice.dest.key']")
+	private WebElement destinyFlyText;
+
+	@FindBy(xpath = "//input[@name='ar.rt.leaveSlice.date']")
+	private WebElement leaveDateText;
+
+	@FindBy(xpath = "//input[@name='ar.rt.returnSlice.date']")
+	private WebElement returnDateText;
+
+	@FindBy(xpath = "//select[@name='ar.rt.numAdult']")
+	private WebElement adultQntyBtn;
+
+	@FindBy(xpath = "//input[@name='hotel.keyword.key']")
+	private WebElement hotelTextBox;
+
+	@FindBy(xpath = "//input[@value='Search Flights']")
+	private WebElement searchFlightBtn;
+
+	public void goToPage(WebDriver driver) {
 		driver.get("http://www.cheaptickets.com/");
 	}
-	
-	public void loginIn(){
+
+	public void loginIn() {
 		loginLink.click();
 	}
-	
-	public void logOut(){
+
+	public void logOut() {
 		logoutLink.click();
 	}
-	
-	public void checkLoginStatus(){
+
+	public void checkLoginStatus() {
 		welcomeText.getText().contains("Martin Test");
 	}
-	
-	public void checkLogoutStatus(){
+
+	public void checkLogoutStatus() {
 		welcomeText.getText().contains("CheapTickets");
+	}
+
+	public void selectFlightOnly() {
+		flyRadioBtn.click();
+	}
+
+	public void completeFlightInfo(String leave, String ret) {
+		originFlyText.sendKeys("LAS");
+		destinyFlyText.sendKeys("LAX");
+		leaveDateText.sendKeys(leave);
+		returnDateText.sendKeys(ret);
+		searchFlightBtn.click();
 	}
 }

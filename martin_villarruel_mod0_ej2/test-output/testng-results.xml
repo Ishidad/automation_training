@@ -1,61 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="190875" started-at="2015-03-02T20:29:11Z" finished-at="2015-03-02T20:32:22Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="190875" started-at="2015-03-02T20:29:11Z" finished-at="2015-03-02T20:32:22Z">
-      <class name="martin_villarruel_mod0_ej2_tests.Tests">
-        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@aaca8a]" name="before" is-config="true" duration-ms="6760" started-at="2015-03-02T17:29:11Z" finished-at="2015-03-02T17:29:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="logOut()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@aaca8a]" name="logOut" duration-ms="55687" started-at="2015-03-02T17:29:18Z" finished-at="2015-03-02T17:30:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@aaca8a]" name="after" is-config="true" duration-ms="313" started-at="2015-03-02T17:30:14Z" finished-at="2015-03-02T17:30:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@aaca8a]" name="before" is-config="true" duration-ms="6114" started-at="2015-03-02T17:30:14Z" finished-at="2015-03-02T17:30:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="singIn()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@aaca8a]" name="singIn" duration-ms="52785" started-at="2015-03-02T17:30:20Z" finished-at="2015-03-02T17:31:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- singIn -->
-        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@aaca8a]" name="after" is-config="true" duration-ms="310" started-at="2015-03-02T17:31:13Z" finished-at="2015-03-02T17:31:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@aaca8a]" name="before" is-config="true" duration-ms="5861" started-at="2015-03-02T17:31:13Z" finished-at="2015-03-02T17:31:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="verifyWrongMail()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@aaca8a]" name="verifyWrongMail" duration-ms="28927" started-at="2015-03-02T17:31:19Z" finished-at="2015-03-02T17:31:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyWrongMail -->
-        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@aaca8a]" name="after" is-config="true" duration-ms="220" started-at="2015-03-02T17:31:48Z" finished-at="2015-03-02T17:31:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@aaca8a]" name="before" is-config="true" duration-ms="5777" started-at="2015-03-02T17:31:48Z" finished-at="2015-03-02T17:31:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="verifyWrongPass()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@aaca8a]" name="verifyWrongPass" duration-ms="27872" started-at="2015-03-02T17:31:54Z" finished-at="2015-03-02T17:32:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyWrongPass -->
-        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@aaca8a]" name="after" is-config="true" duration-ms="226" started-at="2015-03-02T17:32:22Z" finished-at="2015-03-02T17:32:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-      </class> <!-- martin_villarruel_mod0_ej2_tests.Tests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+<testng-results skipped="0" failed="0" total="1" passed="1">
+	<reporter-output>
+	</reporter-output>
+	<suite name="Default suite" duration-ms="29166" started-at="2015-03-03T15:12:41Z"
+		finished-at="2015-03-03T15:13:10Z">
+		<groups>
+		</groups>
+		<test name="Default test" duration-ms="29166" started-at="2015-03-03T15:12:41Z"
+			finished-at="2015-03-03T15:13:10Z">
+			<class name="martin_villarruel_mod0_ej2_tests.Tests">
+				<test-method status="PASS"
+					signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@109506a]"
+					name="before" is-config="true" duration-ms="7654" started-at="2015-03-03T12:12:41Z"
+					finished-at="2015-03-03T12:12:48Z">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- before -->
+				<test-method status="PASS"
+					signature="searchForFly()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@109506a]"
+					name="searchForFly" duration-ms="21190" started-at="2015-03-03T12:12:48Z"
+					finished-at="2015-03-03T12:13:10Z">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- searchForFly -->
+				<test-method status="PASS"
+					signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@109506a]"
+					name="after" is-config="true" duration-ms="300" started-at="2015-03-03T12:13:10Z"
+					finished-at="2015-03-03T12:13:10Z">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- after -->
+			</class> <!-- martin_villarruel_mod0_ej2_tests.Tests -->
+		</test> <!-- Default test -->
+	</suite> <!-- Default suite -->
 </testng-results>
