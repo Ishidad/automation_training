@@ -2,6 +2,7 @@ package martin_villarruel_mod0_ej2_pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 public class TripDetailsPage {
 
@@ -19,15 +20,23 @@ public class TripDetailsPage {
 
 	@FindBy(xpath = "//div[@class='tripDetailsComponent ']")
 	private WebElement tripDetailsContent;
+	
+	@FindBy(xpath = "//input[@name='_eventId_checkout']")
+	private WebElement continueBtn;
 
-	public boolean validatePage() {
-		if (pageTitle.isDisplayed() && tripDetailsTitle.isDisplayed()
-				&& reasonToBook.isDisplayed()
-				&& tripInfoSide.isDisplayed()
-				&& tripDetailsContent.isDisplayed()) {
-			return true;
-		} else {
-			return false;
-		}
+	public void validatePage() {
+		Assert.assertNotNull(pageTitle);
+		Assert.assertNotNull(tripDetailsTitle);
+		Assert.assertNotNull(reasonToBook);
+		Assert.assertNotNull(tripInfoSide);
+		Assert.assertNotNull(tripDetailsContent);
+	}
+	
+	public WebElement getTripInfo(){
+		return tripInfoSide;
+	}
+	
+	public void clickContinue(){
+		continueBtn.click();
 	}
 }

@@ -2,11 +2,10 @@ package martin_villarruel_mod0_ej2_pages;
 
 import java.util.List;
 
-import javax.naming.spi.DirStateFactory.Result;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 public class FlightResultsPage {
 
@@ -27,22 +26,30 @@ public class FlightResultsPage {
 
 	@FindBy(xpath = "//div[@id='main']")
 	private WebElement resutlList;
+	
+	@FindBy(xpath = "//div[@data-context='selectedSortLink-AIR_PRICE-ascending']")
+	private WebElement listOrderDropDown;
+	
+	@FindBy(xpath = "//a[@data-wt-ti='airSort-Departure time-ascending']")
+	private WebElement listOrderDropDownOption;
 
-	public boolean validatePage() {
-		if (pageTitle.isDisplayed() && currentTab.isDisplayed()
-				&& tripSummaryTable.isDisplayed()
-				&& airResultMatrix.isDisplayed()
-				&& searchResultNumber.isDisplayed()) {
-			return true;
-		} else {
-			return false;
-		}
+	public void validatePage() {
+		Assert.assertNotNull(pageTitle);
+		Assert.assertNotNull(currentTab);
+		Assert.assertNotNull(tripSummaryTable);
+		Assert.assertNotNull(airResultMatrix);
+		Assert.assertNotNull(searchResultNumber);
+	}
+	
+	public void orderByErliestDeparture(){
+		listOrderDropDown.click();
+		listOrderDropDownOption.click();
 	}
 
 	public void getSelectFirstResult() {
 		List<WebElement> list = resutlList.findElements(By
 				.xpath("//div[@data-context='airResultsCard']"));
-		list.get(0).findElement(By.xpath("//a[@class='buttonLink link']"))
+		list.get(0).findElement(By.xpath("//a[@data-context='selectButton']"))
 				.click();
 	}
 	

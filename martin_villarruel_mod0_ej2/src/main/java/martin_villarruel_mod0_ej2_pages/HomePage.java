@@ -4,7 +4,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 public class HomePage {
+	
+	DateFormat dateFormat = new SimpleDateFormat("mm/dd/yyyy");
+	Date date = new Date();
+	Calendar calendar = Calendar.getInstance();
 
 	@FindBy(id = "headerStandard")
 	private WebElement pageHeader;
@@ -28,10 +37,16 @@ public class HomePage {
 	private WebElement destinyFlyText;
 
 	@FindBy(xpath = "//input[@name='ar.rt.leaveSlice.date']")
-	private WebElement leaveDateText;
+	private WebElement leaveDateInput;
+	
+	@FindBy(xpath = "//span[@data-dateindex='5']")
+	private WebElement leaveDateAutoInput;
 
 	@FindBy(xpath = "//input[@name='ar.rt.returnSlice.date']")
-	private WebElement returnDateText;
+	private WebElement returnDateInput;
+	
+	@FindBy(xpath = "//span[@data-dateindex='28']")
+	private WebElement returnDateAutoInput;
 
 	@FindBy(xpath = "//select[@name='ar.rt.numAdult']")
 	private WebElement adultQntyBtn;
@@ -66,11 +81,13 @@ public class HomePage {
 		flyRadioBtn.click();
 	}
 
-	public void completeFlightInfo(String leave, String ret) {
+	public void completeFlightInfo() {
 		originFlyText.sendKeys("LAS");
 		destinyFlyText.sendKeys("LAX");
-		leaveDateText.sendKeys(leave);
-		returnDateText.sendKeys(ret);
+		leaveDateInput.click();
+		leaveDateAutoInput.click();
+		returnDateInput.click();
+		returnDateAutoInput.click();
 		searchFlightBtn.click();
 	}
 }

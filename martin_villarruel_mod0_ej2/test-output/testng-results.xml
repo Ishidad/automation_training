@@ -2,31 +2,31 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
 	<reporter-output>
 	</reporter-output>
-	<suite name="Default suite" duration-ms="29166" started-at="2015-03-03T15:12:41Z"
-		finished-at="2015-03-03T15:13:10Z">
+	<suite name="Default suite" duration-ms="204612" started-at="2015-03-04T17:10:49Z"
+		finished-at="2015-03-04T17:14:14Z">
 		<groups>
 		</groups>
-		<test name="Default test" duration-ms="29166" started-at="2015-03-03T15:12:41Z"
-			finished-at="2015-03-03T15:13:10Z">
+		<test name="Default test" duration-ms="204612" started-at="2015-03-04T17:10:49Z"
+			finished-at="2015-03-04T17:14:14Z">
 			<class name="martin_villarruel_mod0_ej2_tests.Tests">
 				<test-method status="PASS"
-					signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@109506a]"
-					name="before" is-config="true" duration-ms="7654" started-at="2015-03-03T12:12:41Z"
-					finished-at="2015-03-03T12:12:48Z">
+					signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4e5c0]"
+					name="before" is-config="true" duration-ms="11740" started-at="2015-03-04T14:10:49Z"
+					finished-at="2015-03-04T14:11:01Z">
 					<reporter-output>
 					</reporter-output>
 				</test-method> <!-- before -->
 				<test-method status="PASS"
-					signature="searchForFly()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@109506a]"
-					name="searchForFly" duration-ms="21190" started-at="2015-03-03T12:12:48Z"
-					finished-at="2015-03-03T12:13:10Z">
+					signature="searchForFly()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4e5c0]"
+					name="searchForFly" duration-ms="191216" started-at="2015-03-04T14:11:01Z"
+					finished-at="2015-03-04T14:14:12Z">
 					<reporter-output>
 					</reporter-output>
 				</test-method> <!-- searchForFly -->
 				<test-method status="PASS"
-					signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@109506a]"
-					name="after" is-config="true" duration-ms="300" started-at="2015-03-03T12:13:10Z"
-					finished-at="2015-03-03T12:13:10Z">
+					signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4e5c0]"
+					name="after" is-config="true" duration-ms="1633" started-at="2015-03-04T14:14:12Z"
+					finished-at="2015-03-04T14:14:14Z">
 					<reporter-output>
 					</reporter-output>
 				</test-method> <!-- after -->
