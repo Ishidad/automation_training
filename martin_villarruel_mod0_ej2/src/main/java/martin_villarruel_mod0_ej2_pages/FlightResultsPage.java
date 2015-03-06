@@ -26,10 +26,10 @@ public class FlightResultsPage {
 
 	@FindBy(xpath = "//div[@id='main']")
 	private WebElement resutlList;
-	
+
 	@FindBy(xpath = "//div[@data-context='selectedSortLink-AIR_PRICE-ascending']")
 	private WebElement listOrderDropDown;
-	
+
 	@FindBy(xpath = "//a[@data-wt-ti='airSort-Departure time-ascending']")
 	private WebElement listOrderDropDownOption;
 
@@ -40,8 +40,8 @@ public class FlightResultsPage {
 		Assert.assertNotNull(airResultMatrix);
 		Assert.assertNotNull(searchResultNumber);
 	}
-	
-	public void orderByErliestDeparture(){
+
+	public void orderByErliestDeparture() {
 		listOrderDropDown.click();
 		listOrderDropDownOption.click();
 	}
@@ -52,8 +52,8 @@ public class FlightResultsPage {
 		list.get(0).findElement(By.xpath("//a[@data-context='selectButton']"))
 				.click();
 	}
-	
-	public WebElement getResultList(){
+
+	public WebElement getResultList() {
 		return resutlList;
 	}
 }

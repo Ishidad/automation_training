@@ -1,36 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
-	<reporter-output>
-	</reporter-output>
-	<suite name="Default suite" duration-ms="204612" started-at="2015-03-04T17:10:49Z"
-		finished-at="2015-03-04T17:14:14Z">
-		<groups>
-		</groups>
-		<test name="Default test" duration-ms="204612" started-at="2015-03-04T17:10:49Z"
-			finished-at="2015-03-04T17:14:14Z">
-			<class name="martin_villarruel_mod0_ej2_tests.Tests">
-				<test-method status="PASS"
-					signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4e5c0]"
-					name="before" is-config="true" duration-ms="11740" started-at="2015-03-04T14:10:49Z"
-					finished-at="2015-03-04T14:11:01Z">
-					<reporter-output>
-					</reporter-output>
-				</test-method> <!-- before -->
-				<test-method status="PASS"
-					signature="searchForFly()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4e5c0]"
-					name="searchForFly" duration-ms="191216" started-at="2015-03-04T14:11:01Z"
-					finished-at="2015-03-04T14:14:12Z">
-					<reporter-output>
-					</reporter-output>
-				</test-method> <!-- searchForFly -->
-				<test-method status="PASS"
-					signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4e5c0]"
-					name="after" is-config="true" duration-ms="1633" started-at="2015-03-04T14:14:12Z"
-					finished-at="2015-03-04T14:14:14Z">
-					<reporter-output>
-					</reporter-output>
-				</test-method> <!-- after -->
-			</class> <!-- martin_villarruel_mod0_ej2_tests.Tests -->
-		</test> <!-- Default test -->
-	</suite> <!-- Default suite -->
+<testng-results skipped="0" failed="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="904080" started-at="2015-03-06T14:32:30Z" finished-at="2015-03-06T14:47:34Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="904080" started-at="2015-03-06T14:32:30Z" finished-at="2015-03-06T14:47:34Z">
+      <class name="martin_villarruel_mod0_ej2_tests.Tests">
+        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="before" is-config="true" duration-ms="8088" started-at="2015-03-06T11:32:30Z" finished-at="2015-03-06T11:32:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="logOut" duration-ms="50999" started-at="2015-03-06T11:32:38Z" finished-at="2015-03-06T11:33:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="after" is-config="true" duration-ms="26" started-at="2015-03-06T11:33:29Z" finished-at="2015-03-06T11:33:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="before" is-config="true" duration-ms="8414" started-at="2015-03-06T11:33:29Z" finished-at="2015-03-06T11:33:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="logedInFlightSearch()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="logedInFlightSearch" duration-ms="210481" started-at="2015-03-06T11:33:38Z" finished-at="2015-03-06T11:37:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logedInFlightSearch -->
+        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="after" is-config="true" duration-ms="997" started-at="2015-03-06T11:37:08Z" finished-at="2015-03-06T11:37:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="before" is-config="true" duration-ms="8734" started-at="2015-03-06T11:37:09Z" finished-at="2015-03-06T11:37:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="negativeSearchResults1()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="negativeSearchResults1" duration-ms="54105" started-at="2015-03-06T11:37:18Z" finished-at="2015-03-06T11:38:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeSearchResults1 -->
+        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="after" is-config="true" duration-ms="1579" started-at="2015-03-06T11:38:12Z" finished-at="2015-03-06T11:38:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="before" is-config="true" duration-ms="9865" started-at="2015-03-06T11:38:14Z" finished-at="2015-03-06T11:38:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="negativeSearchResults2()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="negativeSearchResults2" duration-ms="48714" started-at="2015-03-06T11:38:23Z" finished-at="2015-03-06T11:39:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeSearchResults2 -->
+        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="after" is-config="true" duration-ms="22" started-at="2015-03-06T11:39:12Z" finished-at="2015-03-06T11:39:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="before" is-config="true" duration-ms="8042" started-at="2015-03-06T11:39:12Z" finished-at="2015-03-06T11:39:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="positiveSearchResults()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="positiveSearchResults" duration-ms="55748" started-at="2015-03-06T11:39:20Z" finished-at="2015-03-06T11:40:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- positiveSearchResults -->
+        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="after" is-config="true" duration-ms="26" started-at="2015-03-06T11:40:16Z" finished-at="2015-03-06T11:40:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="before" is-config="true" duration-ms="7608" started-at="2015-03-06T11:40:16Z" finished-at="2015-03-06T11:40:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="searchForFly()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="searchForFly" duration-ms="167919" started-at="2015-03-06T11:40:24Z" finished-at="2015-03-06T11:43:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForFly -->
+        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="after" is-config="true" duration-ms="1001" started-at="2015-03-06T11:43:12Z" finished-at="2015-03-06T11:43:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="before" is-config="true" duration-ms="7673" started-at="2015-03-06T11:43:13Z" finished-at="2015-03-06T11:43:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="searchForFlyAndHotel()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="searchForFlyAndHotel" duration-ms="124720" started-at="2015-03-06T11:43:20Z" finished-at="2015-03-06T11:45:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForFlyAndHotel -->
+        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="after" is-config="true" duration-ms="633" started-at="2015-03-06T11:45:25Z" finished-at="2015-03-06T11:45:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="before" is-config="true" duration-ms="8227" started-at="2015-03-06T11:45:26Z" finished-at="2015-03-06T11:45:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="singIn()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="singIn" duration-ms="48176" started-at="2015-03-06T11:45:34Z" finished-at="2015-03-06T11:46:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- singIn -->
+        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="after" is-config="true" duration-ms="37" started-at="2015-03-06T11:46:22Z" finished-at="2015-03-06T11:46:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="before" is-config="true" duration-ms="8729" started-at="2015-03-06T11:46:22Z" finished-at="2015-03-06T11:46:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="verifyWrongMail()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="verifyWrongMail" duration-ms="27796" started-at="2015-03-06T11:46:31Z" finished-at="2015-03-06T11:46:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWrongMail -->
+        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="after" is-config="true" duration-ms="21" started-at="2015-03-06T11:46:58Z" finished-at="2015-03-06T11:46:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="before" is-config="true" duration-ms="6731" started-at="2015-03-06T11:46:59Z" finished-at="2015-03-06T11:47:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="verifyWrongPass()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="verifyWrongPass" duration-ms="28929" started-at="2015-03-06T11:47:05Z" finished-at="2015-03-06T11:47:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWrongPass -->
+        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="after" is-config="true" duration-ms="21" started-at="2015-03-06T11:47:34Z" finished-at="2015-03-06T11:47:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- martin_villarruel_mod0_ej2_tests.Tests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

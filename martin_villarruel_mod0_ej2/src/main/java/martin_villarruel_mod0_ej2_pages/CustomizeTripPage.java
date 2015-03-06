@@ -8,15 +8,15 @@ public class CustomizeTripPage {
 
 	@FindBy(xpath = "//input[@name='_eventId_continue']")
 	private WebElement continueBtn;
-	
+
 	@FindBy(xpath = "//div[@class='productInfo']")
 	private WebElement tripInfoSide;
-	
-	public void checkTripInfo(WebElement tripInfo){
+
+	public void checkTripInfo(WebElement tripInfo) {
 		Assert.assertEquals(tripInfoSide, tripInfo);
 	}
-	
-	public void clickContinue(){
+
+	public void clickContinue() {
 		continueBtn.click();
 	}
 }

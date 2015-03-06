@@ -20,7 +20,7 @@ public class TripDetailsPage {
 
 	@FindBy(xpath = "//div[@class='tripDetailsComponent ']")
 	private WebElement tripDetailsContent;
-	
+
 	@FindBy(xpath = "//input[@name='_eventId_checkout']")
 	private WebElement continueBtn;
 
@@ -31,12 +31,12 @@ public class TripDetailsPage {
 		Assert.assertNotNull(tripInfoSide);
 		Assert.assertNotNull(tripDetailsContent);
 	}
-	
-	public WebElement getTripInfo(){
+
+	public WebElement getTripInfo() {
 		return tripInfoSide;
 	}
-	
-	public void clickContinue(){
+
+	public void clickContinue() {
 		continueBtn.click();
 	}
 }

@@ -8,45 +8,46 @@ public class TravelerInfoPage {
 
 	@FindBy(xpath = "//input[@name='_eventId_submit']")
 	private WebElement continueBtn;
-	
+
 	@FindBy(xpath = "//div[@class='productInfo']")
 	private WebElement tripInfoSide;
-	
-	@FindBy(xpath ="//input[contains(@name, 'travelers[0].name.firstName')]")
+
+	@FindBy(xpath = "//input[contains(@name, 'travelers[0].name.firstName')]")
 	private WebElement travelerFirstName;
-	
-	@FindBy(xpath ="//input[contains(@name, 'travelers[0].name.lastName')]")
+
+	@FindBy(xpath = "//input[contains(@name, 'travelers[0].name.lastName')]")
 	private WebElement travelerLastName;
-	
-	@FindBy(xpath ="//input[contains(@name, 'travelers[0].phoneNumber.phoneNumber')]")
+
+	@FindBy(xpath = "//input[contains(@name, 'travelers[0].phoneNumber.phoneNumber')]")
 	private WebElement travelersPhone;
-	
-	@FindBy(xpath ="//option[@value='M']")
+
+	@FindBy(xpath = "//option[@value='M']")
 	private WebElement travelerMasculine;
-	
-	@FindBy(xpath ="//option[@value='F']")
+
+	@FindBy(xpath = "//option[@value='F']")
 	private WebElement travelerFemenine;
-	
-	@FindBy(xpath ="//option[@value='6']")
+
+	@FindBy(xpath = "//option[@value='6']")
 	private WebElement travelerBirthDay;
-	
-	@FindBy(xpath ="//option[@value='30']")
+
+	@FindBy(xpath = "//option[@value='30']")
 	private WebElement travelerBirthMonth;
-	
-	@FindBy(xpath ="//option[@value='1987']")
+
+	@FindBy(xpath = "//option[@value='1987']")
 	private WebElement travelerBirthYear;
-	
-	@FindBy(xpath ="//input[contains(@name, 'email.emailAddress')]")
+
+	@FindBy(xpath = "//input[contains(@name, 'email.emailAddress')]")
 	private WebElement travelersEmailComfirmation;
-	
-	@FindBy(xpath ="//input[@class='needsclick' and contains(@name, 'selectedProductIndex') and @value='-1']")
+
+	@FindBy(xpath = "//input[@class='needsclick' and @type='radio' and @value='-1']")
 	private WebElement noinsurenceRadioBtn;
-	
-	public void checkTripInfo(WebElement tripInfo){
+
+	public void checkTripInfo(WebElement tripInfo) {
 		Assert.assertEquals(tripInfoSide, tripInfo);
 	}
-	
-	public void fillTravelerInfo(String firstName, String lastName, String phoneNumber, String eMail){
+
+	public void fillTravelerInfo(String firstName, String lastName,
+			String phoneNumber, String eMail) {
 		travelerFirstName.sendKeys(firstName);
 		travelerLastName.sendKeys(lastName);
 		travelersPhone.sendKeys(phoneNumber);
@@ -55,10 +56,23 @@ public class TravelerInfoPage {
 		travelerBirthMonth.click();
 		travelerBirthYear.click();
 		travelersEmailComfirmation.sendKeys(eMail);
-		noinsurenceRadioBtn.click();		
+		noinsurenceRadioBtn.click();
 	}
-	
-	public void clickContinue(){
+
+	public void fillLoginTravelerInfo(String phoneNumber, String eMail) {
+		travelersPhone.sendKeys(phoneNumber);
+		travelerMasculine.click();
+		travelerBirthDay.click();
+		travelerBirthMonth.click();
+		travelerBirthYear.click();
+		noinsurenceRadioBtn.click();
+	}
+
+	public void clickContinue() {
 		continueBtn.click();
+	}
+
+	public void fillHotelSearch() {
+
 	}
 }
