@@ -1,133 +1,534 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="10" passed="10">
+<testng-results skipped="0" failed="1" total="10" passed="9">
   <reporter-output>
+    <line>
+      <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+    </line>
+    <line>
+      <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+    </line>
+    <line>
+      <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+    </line>
+    <line>
+      <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+    </line>
+    <line>
+      <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+    </line>
+    <line>
+      <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+    </line>
+    <line>
+      <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+    </line>
+    <line>
+      <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+    </line>
+    <line>
+      <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+    </line>
+    <line>
+      <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="904080" started-at="2015-03-06T14:32:30Z" finished-at="2015-03-06T14:47:34Z">
+  <suite name="suit 1" duration-ms="564713" started-at="2015-03-12T18:00:39Z" finished-at="2015-03-12T18:10:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="904080" started-at="2015-03-06T14:32:30Z" finished-at="2015-03-06T14:47:34Z">
+    <test name="Run on Firefox1" duration-ms="79086" started-at="2015-03-12T18:00:39Z" finished-at="2015-03-12T18:01:58Z">
       <class name="martin_villarruel_mod0_ej2_tests.Tests">
-        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="before" is-config="true" duration-ms="8088" started-at="2015-03-06T11:32:30Z" finished-at="2015-03-06T11:32:38Z">
+        <test-method status="PASS" signature="before(java.lang.String)[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1af1ad8]" name="before" is-config="true" duration-ms="31648" started-at="2015-03-12T15:00:39Z" finished-at="2015-03-12T15:01:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CH]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+            </line>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="logOut()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="logOut" duration-ms="50999" started-at="2015-03-06T11:32:38Z" finished-at="2015-03-06T11:33:29Z">
+        <test-method status="PASS" signature="logOut()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1af1ad8]" name="logOut" duration-ms="34401" started-at="2015-03-12T15:01:10Z" finished-at="2015-03-12T15:01:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="after" is-config="true" duration-ms="26" started-at="2015-03-06T11:33:29Z" finished-at="2015-03-06T11:33:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="before" is-config="true" duration-ms="8414" started-at="2015-03-06T11:33:29Z" finished-at="2015-03-06T11:33:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="logedInFlightSearch()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="logedInFlightSearch" duration-ms="210481" started-at="2015-03-06T11:33:38Z" finished-at="2015-03-06T11:37:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logedInFlightSearch -->
-        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="after" is-config="true" duration-ms="997" started-at="2015-03-06T11:37:08Z" finished-at="2015-03-06T11:37:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="before" is-config="true" duration-ms="8734" started-at="2015-03-06T11:37:09Z" finished-at="2015-03-06T11:37:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="negativeSearchResults1()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="negativeSearchResults1" duration-ms="54105" started-at="2015-03-06T11:37:18Z" finished-at="2015-03-06T11:38:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- negativeSearchResults1 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="after" is-config="true" duration-ms="1579" started-at="2015-03-06T11:38:12Z" finished-at="2015-03-06T11:38:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="before" is-config="true" duration-ms="9865" started-at="2015-03-06T11:38:14Z" finished-at="2015-03-06T11:38:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="negativeSearchResults2()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="negativeSearchResults2" duration-ms="48714" started-at="2015-03-06T11:38:23Z" finished-at="2015-03-06T11:39:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- negativeSearchResults2 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="after" is-config="true" duration-ms="22" started-at="2015-03-06T11:39:12Z" finished-at="2015-03-06T11:39:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="before" is-config="true" duration-ms="8042" started-at="2015-03-06T11:39:12Z" finished-at="2015-03-06T11:39:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="positiveSearchResults()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="positiveSearchResults" duration-ms="55748" started-at="2015-03-06T11:39:20Z" finished-at="2015-03-06T11:40:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- positiveSearchResults -->
-        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="after" is-config="true" duration-ms="26" started-at="2015-03-06T11:40:16Z" finished-at="2015-03-06T11:40:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="before" is-config="true" duration-ms="7608" started-at="2015-03-06T11:40:16Z" finished-at="2015-03-06T11:40:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="searchForFly()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="searchForFly" duration-ms="167919" started-at="2015-03-06T11:40:24Z" finished-at="2015-03-06T11:43:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchForFly -->
-        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="after" is-config="true" duration-ms="1001" started-at="2015-03-06T11:43:12Z" finished-at="2015-03-06T11:43:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="before" is-config="true" duration-ms="7673" started-at="2015-03-06T11:43:13Z" finished-at="2015-03-06T11:43:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="searchForFlyAndHotel()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="searchForFlyAndHotel" duration-ms="124720" started-at="2015-03-06T11:43:20Z" finished-at="2015-03-06T11:45:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchForFlyAndHotel -->
-        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="after" is-config="true" duration-ms="633" started-at="2015-03-06T11:45:25Z" finished-at="2015-03-06T11:45:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="before" is-config="true" duration-ms="8227" started-at="2015-03-06T11:45:26Z" finished-at="2015-03-06T11:45:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="singIn()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="singIn" duration-ms="48176" started-at="2015-03-06T11:45:34Z" finished-at="2015-03-06T11:46:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- singIn -->
-        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="after" is-config="true" duration-ms="37" started-at="2015-03-06T11:46:22Z" finished-at="2015-03-06T11:46:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="before" is-config="true" duration-ms="8729" started-at="2015-03-06T11:46:22Z" finished-at="2015-03-06T11:46:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="verifyWrongMail()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="verifyWrongMail" duration-ms="27796" started-at="2015-03-06T11:46:31Z" finished-at="2015-03-06T11:46:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyWrongMail -->
-        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="after" is-config="true" duration-ms="21" started-at="2015-03-06T11:46:58Z" finished-at="2015-03-06T11:46:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="before" is-config="true" duration-ms="6731" started-at="2015-03-06T11:46:59Z" finished-at="2015-03-06T11:47:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="verifyWrongPass()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="verifyWrongPass" duration-ms="28929" started-at="2015-03-06T11:47:05Z" finished-at="2015-03-06T11:47:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyWrongPass -->
-        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1a4d2c0]" name="after" is-config="true" duration-ms="21" started-at="2015-03-06T11:47:34Z" finished-at="2015-03-06T11:47:34Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1af1ad8]" name="after" is-config="true" duration-ms="13009" started-at="2015-03-12T15:01:45Z" finished-at="2015-03-12T15:01:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- martin_villarruel_mod0_ej2_tests.Tests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Run on Firefox1 -->
+    <test name="Run on Firefox" duration-ms="79120" started-at="2015-03-12T18:00:39Z" finished-at="2015-03-12T18:01:58Z">
+      <class name="martin_villarruel_mod0_ej2_tests.Tests">
+        <test-method status="PASS" signature="before(java.lang.String)[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@10d1e0b]" name="before" is-config="true" duration-ms="33122" started-at="2015-03-12T15:00:39Z" finished-at="2015-03-12T15:01:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CH]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="singIn()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@10d1e0b]" name="singIn" duration-ms="38132" started-at="2015-03-12T15:01:12Z" finished-at="2015-03-12T15:01:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- singIn -->
+        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@10d1e0b]" name="after" is-config="true" duration-ms="7838" started-at="2015-03-12T15:01:50Z" finished-at="2015-03-12T15:01:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- martin_villarruel_mod0_ej2_tests.Tests -->
+    </test> <!-- Run on Firefox -->
+    <test name="Run on Firefox2" duration-ms="82407" started-at="2015-03-12T18:00:39Z" finished-at="2015-03-12T18:02:01Z">
+      <class name="martin_villarruel_mod0_ej2_tests.Tests">
+        <test-method status="PASS" signature="before(java.lang.String)[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1ce50a9]" name="before" is-config="true" duration-ms="34276" started-at="2015-03-12T15:00:39Z" finished-at="2015-03-12T15:01:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CH]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="verifyWrongMail()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1ce50a9]" name="verifyWrongMail" duration-ms="43199" started-at="2015-03-12T15:01:13Z" finished-at="2015-03-12T15:01:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWrongMail -->
+        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1ce50a9]" name="after" is-config="true" duration-ms="4918" started-at="2015-03-12T15:01:56Z" finished-at="2015-03-12T15:02:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- martin_villarruel_mod0_ej2_tests.Tests -->
+    </test> <!-- Run on Firefox2 -->
+    <test name="Run on Firefox3" duration-ms="82971" started-at="2015-03-12T18:00:39Z" finished-at="2015-03-12T18:02:02Z">
+      <class name="martin_villarruel_mod0_ej2_tests.Tests">
+        <test-method status="PASS" signature="before(java.lang.String)[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@d0cdd0]" name="before" is-config="true" duration-ms="34068" started-at="2015-03-12T15:00:39Z" finished-at="2015-03-12T15:01:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CH]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="verifyWrongPass()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@d0cdd0]" name="verifyWrongPass" duration-ms="44282" started-at="2015-03-12T15:01:13Z" finished-at="2015-03-12T15:01:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWrongPass -->
+        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@d0cdd0]" name="after" is-config="true" duration-ms="4615" started-at="2015-03-12T15:01:57Z" finished-at="2015-03-12T15:02:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- martin_villarruel_mod0_ej2_tests.Tests -->
+    </test> <!-- Run on Firefox3 -->
+    <test name="Run on Firefox6" duration-ms="107461" started-at="2015-03-12T18:01:58Z" finished-at="2015-03-12T18:03:45Z">
+      <class name="martin_villarruel_mod0_ej2_tests.Tests">
+        <test-method status="PASS" signature="before(java.lang.String)[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@13552ed]" name="before" is-config="true" duration-ms="26034" started-at="2015-03-12T15:01:58Z" finished-at="2015-03-12T15:02:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CH]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="positiveSearchResults()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@13552ed]" name="positiveSearchResults" duration-ms="79172" started-at="2015-03-12T15:02:24Z" finished-at="2015-03-12T15:03:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- positiveSearchResults -->
+        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@13552ed]" name="after" is-config="true" duration-ms="2254" started-at="2015-03-12T15:03:43Z" finished-at="2015-03-12T15:03:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- martin_villarruel_mod0_ej2_tests.Tests -->
+    </test> <!-- Run on Firefox6 -->
+    <test name="Run on Firefox5" duration-ms="114894" started-at="2015-03-12T18:01:58Z" finished-at="2015-03-12T18:03:53Z">
+      <class name="martin_villarruel_mod0_ej2_tests.Tests">
+        <test-method status="PASS" signature="before(java.lang.String)[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@f30093]" name="before" is-config="true" duration-ms="22123" started-at="2015-03-12T15:01:58Z" finished-at="2015-03-12T15:02:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CH]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="negativeSearchResults1()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@f30093]" name="negativeSearchResults1" duration-ms="89703" started-at="2015-03-12T15:02:20Z" finished-at="2015-03-12T15:03:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeSearchResults1 -->
+        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@f30093]" name="after" is-config="true" duration-ms="3066" started-at="2015-03-12T15:03:50Z" finished-at="2015-03-12T15:03:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- martin_villarruel_mod0_ej2_tests.Tests -->
+    </test> <!-- Run on Firefox5 -->
+    <test name="Run on Firefox8" duration-ms="110705" started-at="2015-03-12T18:02:02Z" finished-at="2015-03-12T18:03:52Z">
+      <class name="martin_villarruel_mod0_ej2_tests.Tests">
+        <test-method status="PASS" signature="before(java.lang.String)[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@c67f69]" name="before" is-config="true" duration-ms="17898" started-at="2015-03-12T15:02:02Z" finished-at="2015-03-12T15:02:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CH]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="negativeSearchResults2()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@c67f69]" name="negativeSearchResults2" duration-ms="90387" started-at="2015-03-12T15:02:20Z" finished-at="2015-03-12T15:03:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeSearchResults2 -->
+        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@c67f69]" name="after" is-config="true" duration-ms="2419" started-at="2015-03-12T15:03:50Z" finished-at="2015-03-12T15:03:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- martin_villarruel_mod0_ej2_tests.Tests -->
+    </test> <!-- Run on Firefox8 -->
+    <test name="Run on Firefox7" duration-ms="267615" started-at="2015-03-12T18:02:01Z" finished-at="2015-03-12T18:06:29Z">
+      <class name="martin_villarruel_mod0_ej2_tests.Tests">
+        <test-method status="PASS" signature="before(java.lang.String)[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@c1abcf]" name="before" is-config="true" duration-ms="19453" started-at="2015-03-12T15:02:01Z" finished-at="2015-03-12T15:02:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CH]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="logedInFlightSearch()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@c1abcf]" name="logedInFlightSearch" duration-ms="245755" started-at="2015-03-12T15:02:21Z" finished-at="2015-03-12T15:06:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logedInFlightSearch -->
+        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@c1abcf]" name="after" is-config="true" duration-ms="2405" started-at="2015-03-12T15:06:26Z" finished-at="2015-03-12T15:06:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- martin_villarruel_mod0_ej2_tests.Tests -->
+    </test> <!-- Run on Firefox7 -->
+    <test name="Run on Firefox9" duration-ms="319627" started-at="2015-03-12T18:03:46Z" finished-at="2015-03-12T18:09:06Z">
+      <class name="martin_villarruel_mod0_ej2_tests.Tests">
+        <test-method status="PASS" signature="before(java.lang.String)[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@40a47f]" name="before" is-config="true" duration-ms="112949" started-at="2015-03-12T15:03:46Z" finished-at="2015-03-12T15:05:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="FAIL" signature="searchForFlyAndHotel()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@40a47f]" name="searchForFlyAndHotel" duration-ms="206193" started-at="2015-03-12T15:05:39Z" finished-at="2015-03-12T15:09:05Z">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[The xpath expression '//a[contains(@href, 'rating=4')]' cannot be evaluated or does notresult in a WebElement (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.72 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'GLB5737', ip: '10.150.10.194', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_40'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=9, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:4003/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 78844bdd-fbe0-4c17-bb99-ec0005575ba9
+Command duration or timeout: 7.90 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'GLB5737', ip: '10.150.10.194', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_75'
+Session ID: 49cfe2c7-1cdb-4566-8323-6eb05a6e735a
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, enablePersistentHover=true, ignoreZoomSetting=false, ie.ensureCleanSession=false, enableElementCacheCleanup=true, browserName=internet explorer, unexpectedAlertBehaviour=dismiss, webdriver.remote.sessionid=49cfe2c7-1cdb-4566-8323-6eb05a6e735a, version=9, ie.usePerProcessProxy=false, cssSelectorsEnabled=true, ignoreProtectedModeSettings=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:4003/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: The xpath expression '//a[contains(@href, 'rating=4')]' cannot be evaluated or does notresult in a WebElement (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.72 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'GLB5737', ip: '10.150.10.194', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_40'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=9, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:4003/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 78844bdd-fbe0-4c17-bb99-ec0005575ba9
+Command duration or timeout: 7.90 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'GLB5737', ip: '10.150.10.194', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_75'
+Session ID: 49cfe2c7-1cdb-4566-8323-6eb05a6e735a
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, enablePersistentHover=true, ignoreZoomSetting=false, ie.ensureCleanSession=false, enableElementCacheCleanup=true, browserName=internet explorer, unexpectedAlertBehaviour=dismiss, webdriver.remote.sessionid=49cfe2c7-1cdb-4566-8323-6eb05a6e735a, version=9, ie.usePerProcessProxy=false, cssSelectorsEnabled=true, ignoreProtectedModeSettings=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:4003/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at martin_villarruel_mod0_ej2_pages.FlightAndHotelResultPage.orderByFourStars(FlightAndHotelResultPage.java:47)
+	at martin_villarruel_mod0_ej2_tests.Tests.searchForFlyAndHotel(Tests.java:241)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'GLB5737', ip: '10.150.10.194', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_75'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	... 30 more
+Caused by: org.openqa.selenium.InvalidSelectorException: The xpath expression '//a[contains(@href, 'rating=4')]' cannot be evaluated or does notresult in a WebElement (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.72 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'GLB5737', ip: '10.150.10.194', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_40'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=9, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:4003/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 78844bdd-fbe0-4c17-bb99-ec0005575ba9
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'GLB5737', ip: '10.150.10.194', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_75'
+Driver info: driver.version: EventFiringWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy4.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	... 3 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForFlyAndHotel -->
+        <test-method status="FAIL" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@40a47f]" name="after" is-config="true" duration-ms="0" started-at="2015-03-12T15:09:05Z" finished-at="2015-03-12T15:09:05Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'GLB5737', ip: '10.150.10.194', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_40'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=9, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:4003/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 78844bdd-fbe0-4c17-bb99-ec0005575ba9
+Command duration or timeout: 464 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'GLB5737', ip: '10.150.10.194', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_75'
+Session ID: 49cfe2c7-1cdb-4566-8323-6eb05a6e735a
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, enablePersistentHover=true, ignoreZoomSetting=false, ie.ensureCleanSession=false, enableElementCacheCleanup=true, browserName=internet explorer, unexpectedAlertBehaviour=dismiss, webdriver.remote.sessionid=49cfe2c7-1cdb-4566-8323-6eb05a6e735a, version=9, ie.usePerProcessProxy=false, cssSelectorsEnabled=true, ignoreProtectedModeSettings=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:4003/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'GLB5737', ip: '10.150.10.194', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_40'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=9, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:4003/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 78844bdd-fbe0-4c17-bb99-ec0005575ba9
+Command duration or timeout: 464 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'GLB5737', ip: '10.150.10.194', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_75'
+Session ID: 49cfe2c7-1cdb-4566-8323-6eb05a6e735a
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, enablePersistentHover=true, ignoreZoomSetting=false, ie.ensureCleanSession=false, enableElementCacheCleanup=true, browserName=internet explorer, unexpectedAlertBehaviour=dismiss, webdriver.remote.sessionid=49cfe2c7-1cdb-4566-8323-6eb05a6e735a, version=9, ie.usePerProcessProxy=false, cssSelectorsEnabled=true, ignoreProtectedModeSettings=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:4003/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:463)
+	at martin_villarruel_mod0_ej2_tests.Tests.after(Tests.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'GLB5737', ip: '10.150.10.194', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_75'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	... 26 more
+Caused by: org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'GLB5737', ip: '10.150.10.194', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_40'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=9, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:4003/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 78844bdd-fbe0-4c17-bb99-ec0005575ba9
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'GLB5737', ip: '10.150.10.194', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_75'
+Driver info: driver.version: EventFiringWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:463)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy4.close(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.close(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.remote.server.handler.CloseWindow.call(CloseWindow.java:32)
+	at org.openqa.selenium.remote.server.handler.CloseWindow.call(CloseWindow.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	... 3 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- martin_villarruel_mod0_ej2_tests.Tests -->
+    </test> <!-- Run on Firefox9 -->
+    <test name="Run on Firefox4" duration-ms="564699" started-at="2015-03-12T18:00:39Z" finished-at="2015-03-12T18:10:03Z">
+      <class name="martin_villarruel_mod0_ej2_tests.Tests">
+        <test-method status="PASS" signature="before(java.lang.String)[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1e31c3e]" name="before" is-config="true" duration-ms="241382" started-at="2015-03-12T15:00:39Z" finished-at="2015-03-12T15:04:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="searchForFly()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1e31c3e]" name="searchForFly" duration-ms="322801" started-at="2015-03-12T15:04:40Z" finished-at="2015-03-12T15:10:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForFly -->
+        <test-method status="PASS" signature="after()[pri:0, instance:martin_villarruel_mod0_ej2_tests.Tests@1e31c3e]" name="after" is-config="true" duration-ms="503" started-at="2015-03-12T15:10:03Z" finished-at="2015-03-12T15:10:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- martin_villarruel_mod0_ej2_tests.Tests -->
+    </test> <!-- Run on Firefox4 -->
+  </suite> <!-- suit 1 -->
 </testng-results>

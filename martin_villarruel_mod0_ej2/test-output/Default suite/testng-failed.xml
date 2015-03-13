@@ -7,7 +7,10 @@
         <methods>
           <include name="searchForFly"/>
           <include name="after"/>
+          <include name="negativeSearchResults2"/>
+          <include name="logedInFlightSearch"/>
           <include name="before"/>
+          <include name="searchForFlyAndHotel"/>
         </methods>
       </class> <!-- martin_villarruel_mod0_ej2_tests.Tests -->
     </classes>

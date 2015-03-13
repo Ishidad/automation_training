@@ -1,5 +1,7 @@
 package martin_villarruel_mod0_ej2_tests;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import martin_villarruel_mod0_ej2_pages.CustomizeTripPage;
@@ -12,25 +14,24 @@ import martin_villarruel_mod0_ej2_pages.PackageVerificationPage;
 import martin_villarruel_mod0_ej2_pages.TravelerInfoPage;
 import martin_villarruel_mod0_ej2_pages.TripDetailsPage;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Tests {
-
 	WebDriver driver;
 	WebDriverWait wait;
 
-	public void pausa(int s) {
+	public void pause(int s) {
 		try {
 			Thread.sleep(s * 1000);
 		} catch (InterruptedException e) {
@@ -38,10 +39,33 @@ public class Tests {
 	}
 
 	@BeforeMethod
-	public void before() {
-		driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
+	@Parameters("browser")
+	public void before(String browser) throws MalformedURLException {
+		System.out.println(browser);
+		if(browser.equals("FF")){
+		DesiredCapabilities capability = DesiredCapabilities.firefox();
+		driver = new RemoteWebDriver(new URL("http://localhost:5555/wd/hub"), capability);
+		}
+		if(browser.equals("CH")){
+		DesiredCapabilities capability = DesiredCapabilities.chrome();
+		System.setProperty("webdriver.chrome.driver",
+				"C://Users//martin.villarruel//Desktop//eclipse//chromedriver.exe");
+		driver = new RemoteWebDriver(new URL("http://localhost:5555/wd/hub"), capability);
+		}
+		if(browser.equals("IE")){
+		DesiredCapabilities capability = DesiredCapabilities.internetExplorer();
+		capability.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+		System.setProperty("webdriver.ie.driver",
+				   "C://Users//martin.villarruel//Desktop//eclipse//IEDriverServer.exe");
+		driver = new RemoteWebDriver(new URL("http://localhost:5555/wd/hub"), capability);   
+		}
+//		driver = new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();		
+
+		driver.get("http://www.cheaptickets.com/");
+		Reporter.log("Se Entro a la Pagina Correctamente\n");
 	}
 
 	@AfterMethod
@@ -77,6 +101,7 @@ public class Tests {
 	public void verifyWrongMail() {
 		LogInPage loginPage = PageFactory.initElements(driver, LogInPage.class);
 		loginPage.goToPage(driver);
+		pause(15);
 		loginPage.fillLogIn("asdsad", "Automation");
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		loginPage.checkForErrorMessage();
@@ -86,6 +111,7 @@ public class Tests {
 	public void verifyWrongPass() {
 		LogInPage loginPage = PageFactory.initElements(driver, LogInPage.class);
 		loginPage.goToPage(driver);
+		pause(15);
 		loginPage.fillLogIn("m.villarruel.test@gmail.com", "asdadad");
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		loginPage.checkForErrorMessage();
@@ -95,27 +121,28 @@ public class Tests {
 	public void searchForFly() {
 		HomePage homePage = PageFactory.initElements(driver, HomePage.class);
 		homePage.goToPage(driver);
+		pause(15);
 		homePage.selectFlightOnly();
 		homePage.completeFlightInfo();
-		pausa(30);
+		pause(30);
 		FlightResultsPage flightSearchPage = PageFactory.initElements(driver,
 				FlightResultsPage.class);
 		flightSearchPage.validatePage();
 		flightSearchPage.orderByErliestDeparture();
-		pausa(10);
+		pause(10);
 		flightSearchPage.getSelectFirstResult();
-		pausa(30);
+		pause(30);
 		TripDetailsPage tripDetailsPage = PageFactory.initElements(driver,
 				TripDetailsPage.class);
 		tripDetailsPage.validatePage();
 		WebElement tripInfo = tripDetailsPage.getTripInfo();
 		tripDetailsPage.clickContinue();
-		pausa(15);
+		pause(15);
 		CustomizeTripPage customTrip = PageFactory.initElements(driver,
 				CustomizeTripPage.class);
 		customTrip.checkTripInfo(tripInfo);
 		customTrip.clickContinue();
-		pausa(15);
+		pause(15);
 		TravelerInfoPage travelInfo = PageFactory.initElements(driver,
 				TravelerInfoPage.class);
 		travelInfo.checkTripInfo(tripInfo);
@@ -128,9 +155,10 @@ public class Tests {
 	public void negativeSearchResults1() {
 		HomePage homePage = PageFactory.initElements(driver, HomePage.class);
 		homePage.goToPage(driver);
+		pause(15);
 		homePage.selectFlightOnly();
 		homePage.completeWrongFlightInfo1();
-		pausa(30);
+		pause(30);
 		homePage.checkForErrorMsg();
 	}
 
@@ -138,9 +166,10 @@ public class Tests {
 	public void negativeSearchResults2() {
 		HomePage homePage = PageFactory.initElements(driver, HomePage.class);
 		homePage.goToPage(driver);
+		pause(15);
 		homePage.selectFlightOnly();
 		homePage.completeWrongFlightInfo2();
-		pausa(20);
+		pause(20);
 		FlightSearchErrorPage flyErrorPage = PageFactory.initElements(driver,
 				FlightSearchErrorPage.class);
 		flyErrorPage.validatePage();
@@ -150,9 +179,10 @@ public class Tests {
 	public void positiveSearchResults() {
 		HomePage homePage = PageFactory.initElements(driver, HomePage.class);
 		homePage.goToPage(driver);
+		pause(15);
 		homePage.selectFlightOnly();
 		homePage.completeFlightInfo();
-		pausa(30);
+		pause(30);
 		FlightResultsPage flightSearchPage = PageFactory.initElements(driver,
 				FlightResultsPage.class);
 		flightSearchPage.validatePage();
@@ -162,6 +192,7 @@ public class Tests {
 	public void logedInFlightSearch() {
 		HomePage homePage = PageFactory.initElements(driver, HomePage.class);
 		homePage.goToPage(driver);
+		pause(15);
 		homePage.loginIn();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		LogInPage loginPage = PageFactory.initElements(driver, LogInPage.class);
@@ -169,25 +200,25 @@ public class Tests {
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		homePage.selectFlightOnly();
 		homePage.completeFlightInfo();
-		pausa(30);
+		pause(30);
 		FlightResultsPage flightSearchPage = PageFactory.initElements(driver,
 				FlightResultsPage.class);
 		flightSearchPage.validatePage();
 		flightSearchPage.orderByErliestDeparture();
-		pausa(10);
+		pause(10);
 		flightSearchPage.getSelectFirstResult();
-		pausa(30);
+		pause(30);
 		TripDetailsPage tripDetailsPage = PageFactory.initElements(driver,
 				TripDetailsPage.class);
 		tripDetailsPage.validatePage();
 		WebElement tripInfo = tripDetailsPage.getTripInfo();
 		tripDetailsPage.clickContinue();
-		pausa(15);
+		pause(15);
 		CustomizeTripPage customTrip = PageFactory.initElements(driver,
 				CustomizeTripPage.class);
 		customTrip.checkTripInfo(tripInfo);
 		customTrip.clickContinue();
-		pausa(15);
+		pause(15);
 		TravelerInfoPage travelInfo = PageFactory.initElements(driver,
 				TravelerInfoPage.class);
 		travelInfo.checkTripInfo(tripInfo);
@@ -199,20 +230,21 @@ public class Tests {
 	public void searchForFlyAndHotel() {
 		HomePage homePage = PageFactory.initElements(driver, HomePage.class);
 		homePage.goToPage(driver);
+		pause(15);
 		homePage.selectFlightAndHotel();
-		pausa(10);
+		pause(10);
 		homePage.completeFlightAndHotelInfo();
-		pausa(30);
+		pause(30);
 		FlightAndHotelResultPage flightHotelSearchPage = PageFactory
 				.initElements(driver, FlightAndHotelResultPage.class);
 		flightHotelSearchPage.validatePage();
 		flightHotelSearchPage.orderByFourStars();
-		pausa(15);
+		pause(15);
 		flightHotelSearchPage.orderByScore();
-		pausa(10);
+		pause(10);
 		flightHotelSearchPage.validateScore();
 		flightHotelSearchPage.getSelectFirstResult();
-		pausa(30);
+		pause(30);
 		PackageVerificationPage packageDetailsPage = PageFactory.initElements(
 				driver, PackageVerificationPage.class);
 		packageDetailsPage.clickContinueBtn();

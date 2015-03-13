@@ -39,7 +39,10 @@ public class TravelerInfoPage {
 	@FindBy(xpath = "//input[contains(@name, 'email.emailAddress')]")
 	private WebElement travelersEmailComfirmation;
 
-	@FindBy(xpath = "//input[@class='needsclick' and @type='radio' and @value='-1']")
+//	@FindBy(xpath = "//input[@class='needsclick' and @type='radio' and @value='-1']")
+//	private WebElement noinsurenceRadioBtn;
+	
+	@FindBy(css = "div.fields-related > div > label > div")
 	private WebElement noinsurenceRadioBtn;
 
 	public void checkTripInfo(WebElement tripInfo) {

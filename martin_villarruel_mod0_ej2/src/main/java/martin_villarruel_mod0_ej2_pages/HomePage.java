@@ -28,10 +28,16 @@ public class HomePage {
 	@FindBy(xpath = "//a[contains(@href, '/account/logout')]")
 	private WebElement logoutLink;
 
-	@FindBy(xpath = "//input[@id='search.type.air']")
-	private WebElement flyRadioBtn;
+//	@FindBy(xpath = "//input[@id='search.type.air']")
+//	private WebElement flyRadioBtn;
 
-	@FindBy(xpath = "//input[@id='search.type.aph']")
+	@FindBy(xpath = "//div[@class='button needsclick']")
+	private WebElement flyRadioBtn;
+	
+//	@FindBy(xpath = "//input[@id='search.type.aph']")
+//	private WebElement flyAndHotelRadioBtn;
+	
+	@FindBy(css = "div.products.adMedium > label:nth-child(1) > div")
 	private WebElement flyAndHotelRadioBtn;
 
 	@FindBy(xpath = "//input[@name='ar.rt.leaveSlice.orig.key']")

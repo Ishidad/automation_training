@@ -1,0 +1,102 @@
+<suite name ="suit 1" verbose="1" parallel="tests" thread-count="5">
+
+<test name = "Run on Firefox">
+<parameter name = "browser" value="CH"></parameter>
+<classes>
+<class name="martin_villarruel_mod0_ej2_tests.Tests"></class>
+</classes>
+<methods>
+  <include name="singIn"></include>
+  </methods>
+</test>
+
+<test name = "Run on Firefox1">
+<parameter name = "browser" value="CH"></parameter>
+<classes>
+<class name="martin_villarruel_mod0_ej2_tests.Tests"></class>
+</classes>
+<methods>
+  <include name="logOut"></include>
+  </methods>
+</test>
+
+<test name = "Run on Firefox2">
+<parameter name = "browser" value="CH"></parameter>
+<classes>
+<class name="martin_villarruel_mod0_ej2_tests.Tests"></class>
+</classes>
+<methods>
+  <include name="verifyWrongMail"></include>
+  </methods>
+</test>
+
+<test name = "Run on Firefox3">
+<parameter name = "browser" value="CH"></parameter>
+<classes>
+<class name="martin_villarruel_mod0_ej2_tests.Tests"></class>
+</classes>
+<methods>
+  <include name="verifyWrongPass"></include>
+  </methods>
+</test>
+
+<test name = "Run on Firefox4">
+<parameter name = "browser" value="IE"></parameter>
+<classes>
+<class name="martin_villarruel_mod0_ej2_tests.Tests"></class>
+</classes>
+<methods>
+  <include name="searchForFly"></include>
+  </methods>
+</test>
+
+<test name = "Run on Firefox5">
+<parameter name = "browser" value="CH"></parameter>
+<classes>
+<class name="martin_villarruel_mod0_ej2_tests.Tests"></class>
+</classes>
+<methods>
+  <include name="negativeSearchResults1"></include>
+  </methods>
+</test>
+
+<test name = "Run on Firefox6">
+<parameter name = "browser" value="CH"></parameter>
+<classes>
+<class name="martin_villarruel_mod0_ej2_tests.Tests"></class>
+</classes>
+<methods>
+  <include name="positiveSearchResults"></include>
+  </methods>
+</test>
+
+<test name = "Run on Firefox7">
+<parameter name = "browser" value="CH"></parameter>
+<classes>
+<class name="martin_villarruel_mod0_ej2_tests.Tests"></class>
+</classes>
+<methods>
+  <include name="logedInFlightSearch"></include>
+  </methods>
+</test>
+
+<test name = "Run on Firefox8">
+<parameter name = "browser" value="CH"></parameter>
+<classes>
+<class name="martin_villarruel_mod0_ej2_tests.Tests"></class>
+</classes>
+<methods>
+  <include name="negativeSearchResults2"></include>
+  </methods>
+</test>
+
+<test name = "Run on Firefox9">
+<parameter name = "browser" value="IE"></parameter>
+<classes>
+<class name="martin_villarruel_mod0_ej2_tests.Tests"></class>
+</classes>
+<methods>
+  <include name="searchForFlyAndHotel"></include>
+  </methods>
+</test>
+</suite>

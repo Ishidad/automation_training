@@ -1,15 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [suit 1]" parallel="tests">
+  <parameter name="browser" value="IE"/>
+  <test name="Run on Firefox9(failed)" parallel="tests">
+    <parameter name="browser" value="IE"/>
     <classes>
       <class name="martin_villarruel_mod0_ej2_tests.Tests">
         <methods>
-          <include name="searchForFly"/>
+          <include name="searchForFlyAndHotel"/>
           <include name="after"/>
+          <include name="after"/>
+          <include name="after"/>
+          <include name="after"/>
+          <include name="after"/>
+          <include name="after"/>
+          <include name="after"/>
+          <include name="after"/>
+          <include name="after"/>
+          <include name="after"/>
+          <include name="before"/>
+          <include name="before"/>
+          <include name="before"/>
+          <include name="before"/>
+          <include name="before"/>
+          <include name="before"/>
+          <include name="before"/>
+          <include name="before"/>
+          <include name="before"/>
           <include name="before"/>
         </methods>
       </class> <!-- martin_villarruel_mod0_ej2_tests.Tests -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Run on Firefox9(failed) -->
+</suite> <!-- Failed suite [suit 1] -->
